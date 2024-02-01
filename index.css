@@ -1,0 +1,36 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ 
+}
+.animi{
+padding: 10px;
+position: relative;
+}
+.animi::before{
+    content: " ";
+    background-color: green;
+    position: absolute;
+    top: -15px;
+    right: 20%;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    opacity: 0.7;
+    transition: all;
+    transition-duration: 2s;
+
+   
+}
+
+.animi:hover::before{
+    transform:scale(2) translate(200px)  ;
+
+    /* transform: translateY(-200px); */
+  
+  
+
+}
